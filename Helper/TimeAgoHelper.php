@@ -1,6 +1,6 @@
 <?php
 
-namespace Softspring\TimeAgoBundle;
+namespace Softspring\TimeAgoBundle\Helper;
 
 use Symfony\Component\Translation\TranslatorInterface;
 

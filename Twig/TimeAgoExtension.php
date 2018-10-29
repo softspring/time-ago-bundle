@@ -2,7 +2,7 @@
 
 namespace Softspring\TimeAgoBundle\Twig;
 
-use Softspring\TimeAgoBundle\TimeAgoHelper;
+use Softspring\TimeAgoBundle\Helper\TimeAgoHelper;
 use Twig\Extension\AbstractExtension;
 use Twig\TwigFilter;
 use Twig\TwigFunction;

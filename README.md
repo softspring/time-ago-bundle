@@ -41,7 +41,7 @@ class AppKernel extends Kernel
     {
         $bundles = array(
             // ...
-            new Softspring\TimeAgoBundle\TimeAgoBundle(),
+            new Softspring\TimeAgoBundle\SfsTimeAgoBundle(),
         );
 
         // ...

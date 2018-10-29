@@ -1,0 +1,13 @@
+services:
+    sfs_time_ago.helper:
+        class: Softspring\TimeAgoBundle\Helper\TimeAgoHelper
+        arguments:
+            $translator: '@translator'
+        public: false
+
+    sfs_time_ago.twig_extension:
+        class: Softspring\TimeAgoBundle\Twig\TimeAgoExtension
+        arguments:
+            $helper: '@sfs_time_ago.helper'
+        tags: ['twig.extension']
+        public: false
