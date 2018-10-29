@@ -39,25 +39,25 @@ class TimeAgoHelper
         $diff = $dateTime->diff(new \DateTime('now'));
 
         if ($diff->y) {
-            return $this->translator->transChoice('timeago.years', $diff->y, [], 'timeago');
+            return $this->translator->transChoice('timeago.years', $diff->y, [], 'sfs_timeago');
         }
 
         if ($diff->m) {
-            return $this->translator->transChoice('timeago.months', $diff->m, [], 'timeago');
+            return $this->translator->transChoice('timeago.months', $diff->m, [], 'sfs_timeago');
         }
 
         if ($diff->d) {
-            return $this->translator->transChoice('timeago.days', $diff->d, [], 'timeago');
+            return $this->translator->transChoice('timeago.days', $diff->d, [], 'sfs_timeago');
         }
 
         if ($diff->h) {
-            return $this->translator->transChoice('timeago.hours', $diff->h, [], 'timeago');
+            return $this->translator->transChoice('timeago.hours', $diff->h, [], 'sfs_timeago');
         }
 
         if ($diff->i) {
-            return $this->translator->transChoice('timeago.minutes', $diff->i, [], 'timeago');
+            return $this->translator->transChoice('timeago.minutes', $diff->i, [], 'sfs_timeago');
         }
 
-        return $this->translator->transChoice('timeago.seconds', $diff->s, [], 'timeago');
+        return $this->translator->transChoice('timeago.seconds', $diff->s, [], 'sfs_timeago');
     }
 }
