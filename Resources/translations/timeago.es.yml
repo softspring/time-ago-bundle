@@ -1,0 +1,7 @@
+timeago:
+    seconds: "Hace unos segundos"
+    minutes: "{1} Hace 1 minuto|]1,Inf[ Hace %count% minutos"
+    hours: "{1} Hace 1 hora|]1,Inf[ Hace %count% horas"
+    days: "{1} Hace 1 día|]1,Inf[ Hace %count% días"
+    months: "{1} Hace 1 mes|]1,Inf[ Hace %count% meses"
+    years: "{1} Hace 1 año|]1,Inf[ Hace %count% años"

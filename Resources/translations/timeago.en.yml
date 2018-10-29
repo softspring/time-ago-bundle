@@ -1,0 +1,7 @@
+timeago:
+    seconds: "Less than a minute ago"
+    minutes: "{1} A minute ago|]1,Inf[ %count% minutes ago"
+    hours: "{1} An hour ago|]1,Inf[ %count% hours ago"
+    days: "{1} A day ago|]1,Inf[ %count% days ago"
+    months: "{1} A month ago|]1,Inf[ %count% months ago"
+    years: "{1} A year ago|]1,Inf[ %count% years ago"

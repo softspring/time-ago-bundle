@@ -1,0 +1,19 @@
+{
+    "name": "softspring/time-ago-bundle",
+    "description": "This bundle provides a simple twig extension to human readable date diff based on translations",
+    "license": "MIT",
+    "type": "symfony-bundle",
+    "require": {
+        "php": "^7.0"
+    },
+    "require-dev": {
+        "symfony/translation": "*",
+        "symfony/http-kernel": "*",
+        "twig/twig": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Softspring\\TimeAgoBundle\\": ""
+        }
+    }
+}
