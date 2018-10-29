@@ -54,6 +54,6 @@ class AppKernel extends Kernel
 ## Usage
 
 ```twig
-    {{ object.createdAt|time_ago }} {# for example, renders: 5 minutes ago #}
+{{ object.createdAt|time_ago }} {# for example, renders: 5 minutes ago #}
 ```
 
