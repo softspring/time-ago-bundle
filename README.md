@@ -1,5 +1,10 @@
 This bundle provides a simple twig extension to human readable date diff based on translations.
 
+[![Latest Stable Version](https://poser.pugx.org/softspring/time-ago-bundle/v/stable.svg)](https://packagist.org/packages/softspring/time-ago-bundle)
+[![Latest Unstable Version](https://poser.pugx.org/softspring/time-ago-bundle/v/unstable.svg)](https://packagist.org/packages/softspring/time-ago-bundle)
+[![License](https://poser.pugx.org/softspring/time-ago-bundle/license.svg)](https://packagist.org/packages/softspring/time-ago-bundle)
+[![Total Downloads](https://poser.pugx.org/softspring/time-ago-bundle/downloads)](https://packagist.org/packages/softspring/time-ago-bundle)
+
 # Installation
 
 ## Applications that use Symfony Flex
