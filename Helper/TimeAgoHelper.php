@@ -2,6 +2,7 @@
 
 namespace Softspring\TimeAgoBundle\Helper;
 
+use Psr\Log\LoggerInterface;
 use Symfony\Component\Translation\TranslatorInterface;
 
 class TimeAgoHelper
@@ -12,13 +13,20 @@ class TimeAgoHelper
     protected $translator;
 
     /**
-     * TimeAgoExtension constructor.
-     *
-     * @param TranslatorInterface $translator
+     * @var LoggerInterface|null
      */
-    public function __construct(TranslatorInterface $translator)
+    protected $logger;
+
+    /**
+     * TimeAgoHelper constructor.
+     *
+     * @param TranslatorInterface  $translator
+     * @param LoggerInterface|null $logger
+     */
+    public function __construct(TranslatorInterface $translator, ?LoggerInterface $logger = null)
     {
         $this->translator = $translator;
+        $this->logger = $logger;
     }
 
     /**
@@ -32,7 +40,8 @@ class TimeAgoHelper
             if (is_string($dateTime)) {
                 $dateTime = new \DateTime($dateTime);
             } else {
-                throw new \InvalidArgumentException('Timeago extension must receive a DateTime object or string');
+                $this->logger && $this->logger->warning(sprintf('Timeago extension must receive a DateTime object or string, %s received', gettype($dateTime)));
+                return '';
             }
         }
 

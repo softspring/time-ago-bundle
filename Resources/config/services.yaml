@@ -3,6 +3,7 @@ services:
         class: Softspring\TimeAgoBundle\Helper\TimeAgoHelper
         arguments:
             $translator: '@translator'
+            $logger: '?@logger'
         public: false
 
     sfs_time_ago.twig_extension:
