@@ -17,5 +17,10 @@
         "psr-4": {
             "Softspring\\TimeAgoBundle\\": ""
         }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
     }
 }
