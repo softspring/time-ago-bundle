@@ -8,10 +8,10 @@
         "php": ">=7.4"
     },
     "require-dev": {
-        "symfony/config": "*",
-        "symfony/dependency-injection": "*",
-        "symfony/translation": "*",
-        "symfony/http-kernel": "*",
+        "symfony/config": "^4.4 || ^5.3 || ^6.0",
+        "symfony/dependency-injection": "^4.4 || ^5.3 || ^6.0",
+        "symfony/translation": "^4.4 || ^5.3 || ^6.0",
+        "symfony/http-kernel": "^4.4 || ^5.3 || ^6.0",
         "twig/twig": "*"
     },
     "autoload": {
