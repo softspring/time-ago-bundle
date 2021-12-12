@@ -4,7 +4,7 @@ This bundle provides a simple twig extension to human readable date diff based o
 [![Latest Unstable Version](https://poser.pugx.org/softspring/time-ago-bundle/v/unstable.svg)](https://packagist.org/packages/softspring/time-ago-bundle)
 [![License](https://poser.pugx.org/softspring/time-ago-bundle/license.svg)](https://packagist.org/packages/softspring/time-ago-bundle)
 [![Total Downloads](https://poser.pugx.org/softspring/time-ago-bundle/downloads)](https://packagist.org/packages/softspring/time-ago-bundle)
-[![Build status](https://app.travis-ci.com/github/softspring/time-ago-bundle.svg?branch=master)](https://app.travis-ci.com/github/softspring/time-ago-bundle)
+[![Build status](https://travis-ci.com/softspring/time-ago-bundle.svg?branch=master)](https://app.travis-ci.com/github/softspring/time-ago-bundle)
 
 # Installation
 
