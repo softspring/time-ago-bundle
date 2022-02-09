@@ -13,7 +13,8 @@
         "symfony/dependency-injection": "^4.4 || ^5.3 || ^6.0",
         "symfony/translation": "^4.4 || ^5.3 || ^6.0",
         "symfony/http-kernel": "^4.4 || ^5.3 || ^6.0",
-        "twig/twig": "*"
+        "twig/twig": "*",
+        "friendsofphp/php-cs-fixer": "9999999-dev"
     },
     "autoload": {
         "psr-4": {

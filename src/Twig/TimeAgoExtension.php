@@ -16,8 +16,6 @@ class TimeAgoExtension extends AbstractExtension
 
     /**
      * TimeAgoExtension constructor.
-     *
-     * @param TimeAgoHelper $helper
      */
     public function __construct(TimeAgoHelper $helper)
     {
@@ -25,7 +23,7 @@ class TimeAgoExtension extends AbstractExtension
     }
 
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      */
     public function getFilters()
     {
@@ -35,7 +33,7 @@ class TimeAgoExtension extends AbstractExtension
     }
 
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      */
     public function getFunctions()
     {

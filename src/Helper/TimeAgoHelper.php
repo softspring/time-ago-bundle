@@ -19,9 +19,6 @@ class TimeAgoHelper
 
     /**
      * TimeAgoHelper constructor.
-     *
-     * @param TranslatorInterface  $translator
-     * @param LoggerInterface|null $logger
      */
     public function __construct(TranslatorInterface $translator, ?LoggerInterface $logger = null)
     {
@@ -31,8 +28,6 @@ class TimeAgoHelper
 
     /**
      * @param \DateTime|string $dateTime
-     *
-     * @return string
      */
     public function ago($dateTime): string
     {
@@ -41,6 +36,7 @@ class TimeAgoHelper
                 $dateTime = new \DateTime($dateTime);
             } else {
                 $this->logger && $this->logger->warning(sprintf('Timeago extension must receive a DateTime object or string, %s received', gettype($dateTime)));
+
                 return '';
             }
         }
