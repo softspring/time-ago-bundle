@@ -19,6 +19,8 @@ class TimeAgoHelper
 
     /**
      * @param \DateTime|string $dateTime
+     *
+     * @throws \Exception
      */
     public function ago($dateTime): string
     {
