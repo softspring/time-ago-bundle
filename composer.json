@@ -9,10 +9,10 @@
         "php": ">=7.4"
     },
     "require-dev": {
-        "symfony/config": "^4.4 || ^5.3 || ^6.0",
-        "symfony/dependency-injection": "^4.4 || ^5.3 || ^6.0",
-        "symfony/translation": "^4.4 || ^5.3 || ^6.0",
-        "symfony/http-kernel": "^4.4 || ^5.3 || ^6.0",
+        "symfony/config": "^5.4 || ^6.0",
+        "symfony/dependency-injection": "^5.4 || ^6.0",
+        "symfony/translation": "^5.4 || ^6.0",
+        "symfony/http-kernel": "^5.4 || ^6.0",
         "twig/twig": "*",
         "friendsofphp/php-cs-fixer": "9999999-dev"
     },

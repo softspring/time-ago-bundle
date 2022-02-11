@@ -9,23 +9,17 @@ use Twig\TwigFunction;
 
 class TimeAgoExtension extends AbstractExtension
 {
-    /**
-     * @var TimeAgoHelper
-     */
-    protected $helper;
+    protected TimeAgoHelper $helper;
 
-    /**
-     * TimeAgoExtension constructor.
-     */
     public function __construct(TimeAgoHelper $helper)
     {
         $this->helper = $helper;
     }
 
     /**
-     * {@inheritdoc}
+     * @return TwigFilter[]
      */
-    public function getFilters()
+    public function getFilters(): array
     {
         return [
             new TwigFilter('time_ago', [$this->helper, 'ago']),
@@ -33,9 +27,9 @@ class TimeAgoExtension extends AbstractExtension
     }
 
     /**
-     * {@inheritdoc}
+     * @return TwigFunction[]
      */
-    public function getFunctions()
+    public function getFunctions(): array
     {
         return [
             new TwigFunction('time_ago', [$this->helper, 'ago']),

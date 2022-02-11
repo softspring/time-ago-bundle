@@ -3,23 +3,14 @@
 namespace Softspring\TimeAgoBundle\Helper;
 
 use Psr\Log\LoggerInterface;
-use Symfony\Component\Translation\TranslatorInterface;
+use Symfony\Contracts\Translation\TranslatorInterface;
 
 class TimeAgoHelper
 {
-    /**
-     * @var TranslatorInterface
-     */
-    protected $translator;
+    protected TranslatorInterface $translator;
 
-    /**
-     * @var LoggerInterface|null
-     */
-    protected $logger;
+    protected ?LoggerInterface $logger;
 
-    /**
-     * TimeAgoHelper constructor.
-     */
     public function __construct(TranslatorInterface $translator, ?LoggerInterface $logger = null)
     {
         $this->translator = $translator;
@@ -44,25 +35,25 @@ class TimeAgoHelper
         $diff = $dateTime->diff(new \DateTime('now'));
 
         if ($diff->y) {
-            return $this->translator->transChoice('timeago.years', $diff->y, [], 'sfs_timeago');
+            return $this->translator->trans('timeago.years', ['%count%' => $diff->y], 'sfs_timeago');
         }
 
         if ($diff->m) {
-            return $this->translator->transChoice('timeago.months', $diff->m, [], 'sfs_timeago');
+            return $this->translator->trans('timeago.months', ['%count%' => $diff->m], 'sfs_timeago');
         }
 
         if ($diff->d) {
-            return $this->translator->transChoice('timeago.days', $diff->d, [], 'sfs_timeago');
+            return $this->translator->trans('timeago.days', ['%count%' => $diff->d], 'sfs_timeago');
         }
 
         if ($diff->h) {
-            return $this->translator->transChoice('timeago.hours', $diff->h, [], 'sfs_timeago');
+            return $this->translator->trans('timeago.hours', ['%count%' => $diff->h], 'sfs_timeago');
         }
 
         if ($diff->i) {
-            return $this->translator->transChoice('timeago.minutes', $diff->i, [], 'sfs_timeago');
+            return $this->translator->trans('timeago.minutes', ['%count%' => $diff->i], 'sfs_timeago');
         }
 
-        return $this->translator->transChoice('timeago.seconds', $diff->s, [], 'sfs_timeago');
+        return $this->translator->trans('timeago.seconds', ['%count%' => $diff->s], 'sfs_timeago');
     }
 }
