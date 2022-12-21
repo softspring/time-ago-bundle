@@ -18,7 +18,7 @@ class TimeAgoHelper
     }
 
     /**
-     * @param \DateTime|string $dateTime
+     * @param \DateTime|string|mixed $dateTime
      *
      * @throws \Exception
      */

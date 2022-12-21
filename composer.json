@@ -9,12 +9,13 @@
         "php": ">=7.4"
     },
     "require-dev": {
+        "friendsofphp/php-cs-fixer": "9999999-dev",
+        "phpstan/phpstan": "^1.9",
         "symfony/config": "^5.4|^6.0",
         "symfony/dependency-injection": "^5.4|^6.0",
         "symfony/translation": "^5.4|^6.0",
         "symfony/http-kernel": "^5.4|^6.0",
-        "twig/twig": "*",
-        "friendsofphp/php-cs-fixer": "9999999-dev"
+        "twig/twig": "*"
     },
     "autoload": {
         "psr-4": {
