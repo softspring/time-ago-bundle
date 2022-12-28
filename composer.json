@@ -13,8 +13,8 @@
         "phpstan/phpstan": "^1.9",
         "symfony/config": "^5.4|^6.0",
         "symfony/dependency-injection": "^5.4|^6.0",
-        "symfony/translation": "^5.4|^6.0",
         "symfony/http-kernel": "^5.4|^6.0",
+        "symfony/translation": "^5.4|^6.0",
         "twig/twig": "*"
     },
     "autoload": {
@@ -22,6 +22,7 @@
             "Softspring\\TimeAgoBundle\\": "src/"
         }
     },
-    "extra": {
+    "config": {
+        "sort-packages": true
     }
 }
