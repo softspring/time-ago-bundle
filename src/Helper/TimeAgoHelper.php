@@ -11,7 +11,7 @@ class TimeAgoHelper
 
     protected ?LoggerInterface $logger;
 
-    public function __construct(TranslatorInterface $translator, LoggerInterface $logger = null)
+    public function __construct(TranslatorInterface $translator, ?LoggerInterface $logger = null)
     {
         $this->translator = $translator;
         $this->logger = $logger;
