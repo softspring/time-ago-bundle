@@ -6,7 +6,7 @@
 ![PHP Version](https://img.shields.io/packagist/dependency-v/softspring/time-ago-bundle/php?style=flat-square)
 ![Downloads](https://img.shields.io/packagist/dt/softspring/time-ago-bundle?style=flat-square)
 [![CI](https://img.shields.io/github/actions/workflow/status/softspring/time-ago-bundle/ci.yml?branch=6.0&style=flat-square&label=CI)](https://github.com/softspring/time-ago-bundle/actions/workflows/ci.yml)
-[![Coverage](https://codecov.io/gh/softspring/time-ago-bundle/branch/6.0/graph/badge.svg)](https://codecov.io/gh/softspring/time-ago-bundle)
+[![Coverage](https://img.shields.io/codecov/c/github/softspring/time-ago-bundle?branch=6.0&style=flat-square)](https://codecov.io/gh/softspring/time-ago-bundle)
 
 This bundle provides a simple twig extension to human readable date diff based on translations
 
