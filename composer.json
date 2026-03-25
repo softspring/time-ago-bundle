@@ -10,11 +10,13 @@
         "ergebnis/composer-normalize": "^2.50",
         "friendsofphp/php-cs-fixer": "^3.94",
         "phpstan/phpstan": "^2.1",
+        "phpunit/phpunit": "^12.5",
         "rector/rector": "^2.3",
         "symfony/config": "^6.4 || ^7.4 || ^8.0",
         "symfony/dependency-injection": "^6.4 || ^7.4 || ^8.0",
         "symfony/http-kernel": "^6.4 || ^7.4 || ^8.0",
         "symfony/translation": "^6.4 || ^7.4 || ^8.0",
+        "symfony/yaml": "^6.4 || ^7.4 || ^8.0",
         "twig/twig": "^3.4"
     },
     "minimum-stability": "dev",
@@ -22,6 +24,11 @@
     "autoload": {
         "psr-4": {
             "Softspring\\TimeAgoBundle\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Softspring\\TimeAgoBundle\\Tests\\": "tests/"
         }
     },
     "config": {

@@ -1,8 +1,8 @@
 # Time Ago Bundle Features
 
-Functional scope for `softspring/time-ago-bundle`.
+Functional definition for `softspring/time-ago-bundle`.
 
-This file is the functional base for the package documentation. It should describe what the bundle is expected to do for applications and templates, not how the internals are implemented.
+This file defines the expected behavior and functional scope of the component. It should describe what the bundle must do for applications and templates.
 
 ## Purpose
 
