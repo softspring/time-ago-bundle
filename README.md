@@ -1,4 +1,4 @@
-# Time ago bundle
+# Time Ago Bundle
 
 ![Latest Stable](https://img.shields.io/packagist/v/softspring/time-ago-bundle?label=stable&style=flat-square)
 ![Latest Unstable](https://img.shields.io/packagist/v/softspring/time-ago-bundle?label=unstable&style=flat-square&include_prereleases)
@@ -7,62 +7,28 @@
 ![Downloads](https://img.shields.io/packagist/dt/softspring/time-ago-bundle?style=flat-square)
 [![CI](https://img.shields.io/github/actions/workflow/status/softspring/time-ago-bundle/ci.yml?branch=6.0&style=flat-square&label=CI)](https://github.com/softspring/time-ago-bundle/actions/workflows/ci.yml)
 
-This bundle provides a simple twig extension to human readable date diff based on translations.
+This bundle provides a simple twig extension to human readable date diff based on translations
 
-## Installation
+## Armonic
 
-### Applications that use Symfony Flex
+This package is part of [Armonic](https://softspring.es/en/armonic).
 
-Open a command console, enter your project directory and execute:
+## Documentation
 
-```console
-$ composer require softspring/time-ago-bundle
+[Armonic Documentation](https://armonic.softspring.es/latest/components/time-ago-bundle)
+
+## Contributing
+
+Use the standard package commands before sending changes:
+
+```bash
+composer fix
+composer test
+composer test-bc
 ```
 
-### Applications that don't use Symfony Flex
+[Report issues](https://github.com/softspring/time-ago-bundle/issues) and [send Pull Requests](https://github.com/softspring/time-ago-bundle/pulls)
 
-#### Step 1: Download the Bundle
+## License
 
-Open a command console, enter your project directory and execute the
-following command to download the latest stable version of this bundle:
-
-```console
-$ composer require softspring/time-ago-bundle
-```
-
-This command requires you to have Composer installed globally, as explained
-in the [installation chapter](https://getcomposer.org/doc/00-intro.md)
-of the Composer documentation.
-
-#### Step 2: Enable the Bundle
-
-Then, enable the bundle by adding it to the list of registered bundles
-in the `app/AppKernel.php` file of your project:
-
-```php
-<?php
-// app/AppKernel.php
-
-// ...
-class AppKernel extends Kernel
-{
-    public function registerBundles()
-    {
-        $bundles = array(
-            // ...
-            new Softspring\TimeAgoBundle\SfsTimeAgoBundle(),
-        );
-
-        // ...
-    }
-
-    // ...
-}
-```
-
-### Usage
-
-```twig
-{{ object.createdAt|time_ago }} {# for example, renders: 5 minutes ago #}
-```
-
+This package is free and released under the [AGPL-3.0 license](LICENSE).
