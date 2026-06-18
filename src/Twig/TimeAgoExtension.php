@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Softspring\TimeAgoBundle\Twig;
 
 use Softspring\TimeAgoBundle\Helper\TimeAgoHelper;
