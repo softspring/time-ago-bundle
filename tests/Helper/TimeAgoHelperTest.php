@@ -6,7 +6,6 @@ namespace Softspring\TimeAgoBundle\Tests\Helper;
 
 use DateInterval;
 use DateTime;
-use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
 use Softspring\TimeAgoBundle\Helper\TimeAgoHelper;
@@ -49,6 +48,22 @@ final class TimeAgoHelperTest extends TestCase
         $this->assertSame('A day ago', $helper->ago($dateTime));
     }
 
+    public function testRendersMonths(): void
+    {
+        $helper = new TimeAgoHelper($this->createTranslator('en'));
+        $dateTime = $this->createNow()->sub(new DateInterval('P2M'));
+
+        $this->assertSame('2 months ago', $helper->ago($dateTime));
+    }
+
+    public function testRendersYears(): void
+    {
+        $helper = new TimeAgoHelper($this->createTranslator('en'));
+        $dateTime = $this->createNow()->sub(new DateInterval('P2Y'));
+
+        $this->assertSame('2 years ago', $helper->ago($dateTime));
+    }
+
     public function testReturnsEmptyStringAndLogsWarningForInvalidInput(): void
     {
         $logger = $this->createMock(LoggerInterface::class);
@@ -59,6 +74,18 @@ final class TimeAgoHelperTest extends TestCase
         $helper = new TimeAgoHelper($this->createTranslator('en'), $logger);
 
         $this->assertSame('', $helper->ago(123));
+    }
+
+    public function testReturnsEmptyStringAndLogsWarningForInvalidDateString(): void
+    {
+        $logger = $this->createMock(LoggerInterface::class);
+        $logger->expects($this->once())
+            ->method('warning')
+            ->with($this->stringContains('valid date string'));
+
+        $helper = new TimeAgoHelper($this->createTranslator('en'), $logger);
+
+        $this->assertSame('', $helper->ago('not-a-date'));
     }
 
     private function createTranslator(string $locale): Translator

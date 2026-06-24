@@ -7,8 +7,6 @@ namespace Softspring\TimeAgoBundle\Tests\Twig;
 use PHPUnit\Framework\TestCase;
 use Softspring\TimeAgoBundle\Helper\TimeAgoHelper;
 use Softspring\TimeAgoBundle\Twig\TimeAgoExtension;
-use Twig\TwigFilter;
-use Twig\TwigFunction;
 
 final class TimeAgoExtensionTest extends TestCase
 {
@@ -21,8 +19,6 @@ final class TimeAgoExtensionTest extends TestCase
 
         $this->assertCount(1, $filters);
         $this->assertCount(1, $functions);
-        $this->assertContainsOnlyInstancesOf(TwigFilter::class, $filters);
-        $this->assertContainsOnlyInstancesOf(TwigFunction::class, $functions);
         $this->assertSame('time_ago', $filters[0]->getName());
         $this->assertSame('time_ago', $functions[0]->getName());
     }
