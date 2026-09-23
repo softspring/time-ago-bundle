@@ -33,12 +33,16 @@ class TimeAgoHelper
                 try {
                     $dateTime = new DateTime($dateTime);
                 } catch (Exception) {
-                    $this->logger && $this->logger->warning(sprintf('Timeago extension must receive a valid date string, "%s" received', $dateTime));
+                    if ($this->logger instanceof LoggerInterface) {
+                        $this->logger->warning(sprintf('Timeago extension must receive a valid date string, "%s" received', $dateTime));
+                    }
 
                     return '';
                 }
             } else {
-                $this->logger && $this->logger->warning(sprintf('Timeago extension must receive a DateTime object or string, %s received', gettype($dateTime)));
+                if ($this->logger instanceof LoggerInterface) {
+                    $this->logger->warning(sprintf('Timeago extension must receive a DateTime object or string, %s received', gettype($dateTime)));
+                }
 
                 return '';
             }
